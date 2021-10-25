@@ -1,0 +1,77 @@
+.banner {
+    background-color: $black-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    padding: 40px 0;
+    position: relative;
+    height: fit-content;
+    background-image: url("./../../public/img/logobannerneon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-x: 100%;
+
+    /*&__logo {
+        position: absolute;
+        max-width: none;
+        padding: 20px 0;
+        right: -50px;
+
+        img {
+            height: 100%;
+        }
+    }*/
+
+    &__container {
+        width: 100%;
+        max-width: $maxwidth;
+        z-index: 1;
+        padding: $container-padding;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        width: 450px;
+        height: 450px;
+        border-radius: 100%;
+    }
+
+    &__info {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    &__title {
+        font-family: $nunito-font;
+        font-size: $title-fontSize;
+        color: $white-text;
+        font-weight: $bold;
+    }
+
+    &__subtitle {
+        font-family: $nunito-font;
+        font-size: $subtitle-fontSize;
+        color: $white-text;
+        font-weight: $bold;
+        color: $mainBlue;
+    }
+
+    &__text {
+        font-family: $nunito-font;
+        font-size: $text-fontSize;
+        color: $white-text;
+        margin: 10px 0;
+        margin-bottom: 20px;
+    }
+}

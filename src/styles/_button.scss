@@ -1,0 +1,21 @@
+.button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    //width: 100%;
+    padding: 10px 40px;
+    width: fit-content;
+
+    p {
+        font-family: $rubik-font;
+        font-weight: $medium;
+        font-size: $text-fontSize;
+        color: white;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    &--purple {
+        background-color: $mainPurple;
+    }
+}

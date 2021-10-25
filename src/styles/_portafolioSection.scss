@@ -1,0 +1,25 @@
+.portafolioSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+
+    &__container {
+        width: 100%;
+        max-width: $maxwidth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: $container-padding;
+    }
+
+    &__title {
+        font-family: $rubik-font;
+        font-size: $title-fontSize;
+        font-weight: bold;
+        color: $darkBlue;
+    }
+}

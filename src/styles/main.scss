@@ -1,0 +1,31 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "sizes";
+@import "header";
+@import "banner";
+@import "goDown";
+@import "portafolioSection";
+@import "button";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: $gray-bg;
+}
+
+.boldPhrase {
+    font-weight: 700;
+
+    &--blue {
+        color: $mainBlue;
+    }
+
+    &--purple {
+        color: $mainPurple;
+    }
+}
