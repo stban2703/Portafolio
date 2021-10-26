@@ -333,7 +333,7 @@ input[type=button] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-position-x: 100%;
+  background-position-x: 140%;
   /*&__logo {
         position: absolute;
         max-width: none;
@@ -447,7 +447,7 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0;
+  padding-top: 100px;
 }
 
 .portafolioSection__container {
@@ -456,24 +456,193 @@ input[type=button] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 10px;
 }
 
+.portafolioSection__segment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portafolioSection__segment--fitContent {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .portafolioSection__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.portafolioSection__title p {
   font-family: "Rubik", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: #366B8B;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.portafolioSection__ellipse {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+}
+
+.portafolioSection__ellipse--blue {
+  background-color: rgba(98, 196, 246, 0.2);
+}
+
+.portafolioSection__ellipse--purple {
+  background-color: rgba(133, 130, 217, 0.2);
+}
+
+.portafolioSection__parragraph {
+  margin: auto 0;
+}
+
+.portafolioSection__parragraph p {
+  font-family: "Nunito", sans-serif;
+  color: #366B8B;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.portafolioSection__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.softSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.softSkill__icon {
+  width: 223px;
+  height: 231px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.softSkill__icon img {
+  max-width: none;
+}
+
+.softSkill__title {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  color: #9E9E9E;
+  font-weight: 600;
+}
+
+.softSkill--blue .softSkill__icon {
+  background-color: rgba(98, 196, 246, 0.1);
+}
+
+.softSkill--purple .softSkill__icon {
+  background-color: rgba(133, 130, 217, 0.1);
+}
+
+.codeWindow {
+  width: 100%;
+  background-color: white;
+  font-family: "Noto Sans Mono", monospace;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.codeWindow__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.codeWindow__editor {
+  font-size: 1.5rem;
+  color: #366B8B;
+}
+
+.codeWindow__line {
+  margin-bottom: 10px;
+}
+
+.codeWindow__line--firstIndent {
+  text-indent: 30px;
+}
+
+.codeWindow__line--secondIndent {
+  text-indent: 60px;
+}
+
+.codeWindow__text {
+  color: #366B8B;
+}
+
+.codeWindow__text--comment {
+  color: #9E9E9E;
 }
 
 .button {
@@ -506,7 +675,7 @@ body {
 }
 
 body {
-  background-color: #EFEFEF;
+  background-color: #ebedf3;
 }
 
 .boldPhrase {

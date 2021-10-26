@@ -1,0 +1,41 @@
+.codeWindow {
+    width: 100%;
+    background-color: white;
+    font-family: $notoSansMono-font;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__editor {
+        font-size: $text-fontSize;
+        color: $darkBlue;
+    }
+
+    &__line {
+        margin-bottom: 10px;
+       
+        &--firstIndent {
+            text-indent: 30px;
+        }
+
+        &--secondIndent {
+            text-indent: 60px;
+        }
+    }
+
+    &__text {
+        color: $darkBlue;
+
+        &--comment {
+            color: $mainGray;
+        }
+    }
+}
