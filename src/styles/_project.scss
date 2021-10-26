@@ -1,0 +1,22 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+    &__preview {
+        width: 345px;
+        height: 280px;
+        border-radius: 10px;
+        background-color: $darkBlue;
+    }
+
+    &__title {
+        font-family: $nunito-font;
+        font-weight: $semibold;
+        font-size: $thirdTitle-fontSize;
+        color: white;
+        margin-top: 10px;
+    }
+}

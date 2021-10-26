@@ -5,12 +5,14 @@
 @import "header";
 @import "banner";
 @import "goDown";
-@import "portafolioSection";
+@import "aboutMeSection";
 @import "softSkill";
 @import "codeWindow";
 @import "transition";
 @import "ide";
 @import "field";
+@import "myWork";
+@import "project";
 @import "button";
 
 html,
@@ -21,6 +23,9 @@ body {
 
 body {
     background-color: $gray-bg;
+    background-image: url("./../../public/img/patternbg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 .boldPhrase {

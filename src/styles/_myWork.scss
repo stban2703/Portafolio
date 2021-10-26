@@ -1,0 +1,58 @@
+.myWork {
+    background-color: $black-bg;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        width: 100%;
+        max-width: $maxwidth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: $container-padding;
+    }
+
+    &__title {
+        width: 100%;
+
+        h3 {
+            font-family: $rubik-font;
+            font-size: $subtitle-fontSize;
+            font-weight: $semibold;
+            color: white;
+        }
+    }
+
+    &__body {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__row {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+
+        &--left {
+            justify-content: flex-start;
+            .project {
+                margin-right: 20px;
+            }
+        }
+
+        &--right {
+            justify-content: flex-end;
+            .project {
+                margin-left: 20px;
+            }
+        }
+    }
+}
