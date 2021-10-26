@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 150px;
 
     &--light {
         background-color: $gray-bg;
@@ -84,5 +84,13 @@
         margin: auto 0;
         justify-content: space-around;
         align-items: center;
+    }
+
+    &__fields {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 100px;
     }
 }

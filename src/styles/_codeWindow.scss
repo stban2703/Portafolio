@@ -3,9 +3,11 @@
     font-family: $notoSansMono-font;
     border-radius: 10px;
     display: flex;
+    align-self: flex-start;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
+    padding-right: 100px;
 
     &__container {
         display: flex;
