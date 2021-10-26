@@ -77,4 +77,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    &__ide {
+        width: 100%;
+        display: flex;
+        margin: auto 0;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
