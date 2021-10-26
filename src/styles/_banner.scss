@@ -9,11 +9,6 @@
     padding: 40px 0;
     position: relative;
     height: fit-content;
-    background-image: url("./../../public/img/logobannerneon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-position-x: 140%;
 
     /*&__logo {
         position: absolute;
@@ -37,11 +32,20 @@
         justify-content: space-between;
     }
 
+    &__imgContainer {
+        background-image: url("./../../public/img/logobannerneon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        //background-position-x: 120%;
+        width: fit-content;
+    }
+
     &__image {
-        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-        width: 450px;
-        height: 450px;
-        border-radius: 100%;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        width: 650px;
+        height: 440px;
+        border-radius: 25px;
     }
 
     &__info {
