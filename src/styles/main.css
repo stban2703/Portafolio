@@ -455,20 +455,35 @@ input[type=button] {
   padding-top: 100px;
 }
 
+.portafolioSection--light {
+  background-color: #ebedf3;
+}
+
+.portafolioSection--dark {
+  background-color: #0C2534;
+}
+
 .portafolioSection__container {
   width: 100%;
   max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.portafolioSection__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 20px;
 }
 
 .portafolioSection__segment {
@@ -549,7 +564,6 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
 }
 
 .softSkill {
@@ -599,7 +613,6 @@ input[type=button] {
 
 .codeWindow {
   width: 100%;
-  margin-top: 30px;
   background-color: white;
   font-family: "Noto Sans Mono", monospace;
   border-radius: 10px;
@@ -650,6 +663,17 @@ input[type=button] {
 
 .codeWindow__text--comment {
   color: #9E9E9E;
+}
+
+.transition {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.transition--black {
+  background-color: #0C2534;
 }
 
 .button {

@@ -6,13 +6,26 @@
     justify-content: center;
     padding-top: 100px;
 
+    &--light {
+        background-color: $gray-bg;
+    }
+
+    &--dark {
+        background-color: $black-bg;
+    }
+
     &__container {
         width: 100%;
         max-width: $maxwidth;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         padding: $container-padding;
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     &__segment {
@@ -72,6 +85,5 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
     }
 }
