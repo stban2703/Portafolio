@@ -278,14 +278,14 @@ input[type=button] {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 0 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .header__logo img {
-  height: 60px;
+  height: 40px;
   max-width: none;
 }
 
@@ -301,14 +301,13 @@ input[type=button] {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .header__nav li {
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin-left: 50px;
 }
 
 .banner {
@@ -343,7 +342,7 @@ input[type=button] {
 
 .banner__container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   z-index: 1;
   padding: 0 20px;
   display: -webkit-box;
@@ -364,14 +363,25 @@ input[type=button] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner__image {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 650px;
+  width: 100%;
   height: 440px;
   border-radius: 25px;
 }
@@ -391,14 +401,14 @@ input[type=button] {
 
 .banner__title {
   font-family: "Nunito", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #FFFFFF;
   font-weight: 700;
 }
 
 .banner__subtitle {
   font-family: "Nunito", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #FFFFFF;
   font-weight: 700;
   color: #62C4F6;
@@ -406,7 +416,7 @@ input[type=button] {
 
 .banner__text {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #FFFFFF;
   margin: 10px 0;
   margin-bottom: 20px;
@@ -453,12 +463,12 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .aboutMeSection__container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +509,7 @@ input[type=button] {
 
 .aboutMeSection__title p {
   font-family: "Rubik", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #366B8B;
   position: absolute;
@@ -527,7 +537,7 @@ input[type=button] {
 .aboutMeSection__parragraph p {
   font-family: "Nunito", sans-serif;
   color: #366B8B;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-left: 20px;
 }
 
@@ -651,7 +661,7 @@ input[type=button] {
 }
 
 .codeWindow__editor {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #366B8B;
   margin-left: 50px;
 }
@@ -786,7 +796,7 @@ input[type=button] {
 
 .myWork__container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +819,7 @@ input[type=button] {
 
 .myWork__title h3 {
   font-family: "Rubik", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: white;
 }
@@ -894,6 +904,121 @@ input[type=button] {
   margin-top: 10px;
 }
 
+.footer {
+  background-color: #ebedf3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+
+.footer__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #8582D9;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.footer__socialMedia {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__logo {
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer__networks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+}
+
+.contact__icon {
+  width: 33px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__icon img {
+  max-width: none;
+  width: 100%;
+}
+
+.contact__text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  color: #9E9E9E;
+  margin-left: 10px;
+}
+
 .button {
   outline: none;
   border: none;
@@ -907,7 +1032,7 @@ input[type=button] {
 .button p {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: white;
   text-align: center;
   white-space: nowrap;
