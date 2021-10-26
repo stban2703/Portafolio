@@ -245,7 +245,7 @@ input[type=button] {
 }
 
 .header {
-  background-color: #0C2534;
+  background-color: #000000;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +260,10 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .header__container {
@@ -308,7 +312,7 @@ input[type=button] {
 }
 
 .banner {
-  background-color: #0C2534;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,12 +327,8 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 750px;
-  padding: 40px 0;
+  padding-top: 150px;
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   /*&__logo {
         position: absolute;
         max-width: none;
@@ -413,7 +413,7 @@ input[type=button] {
 }
 
 .goDown {
-  background-color: #0C2534;
+  background-color: #000000;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,13 +428,14 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
   border-radius: 0 0 20px 20px;
 }
 
 .goDown img {
   max-width: none;
-  width: 60px;
+  width: 50px;
 }
 
 .portafolioSection {
@@ -460,7 +461,7 @@ input[type=button] {
 }
 
 .portafolioSection--dark {
-  background-color: #0C2534;
+  background-color: #000000;
 }
 
 .portafolioSection__container {
@@ -469,24 +470,15 @@ input[type=button] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 0 20px;
 }
 
-.portafolioSection__body {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .portafolioSection__segment {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,16 +486,12 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.portafolioSection__segment--fitContent {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portafolioSection__title {
@@ -541,7 +529,7 @@ input[type=button] {
 }
 
 .portafolioSection__parragraph {
-  margin: auto 0;
+  margin-top: 50px;
 }
 
 .portafolioSection__parragraph p {
@@ -673,7 +661,7 @@ input[type=button] {
 }
 
 .transition--black {
-  background-color: #0C2534;
+  background-color: #000000;
 }
 
 .button {
