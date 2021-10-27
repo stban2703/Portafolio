@@ -23,7 +23,6 @@
     }
 
     &__logo {
-
         img {
             height: 45px;
             max-width: none;
@@ -41,10 +40,13 @@
         }
 
         li {
-            color: $white-text;
-            font-family: $rubik-font;
-            font-size: $text-fontSize;
             margin-right: 50px;
+
+            a {
+                color: $white-text;
+                font-family: $rubik-font;
+                font-size: $text-fontSize;
+            }
         }
     }
 }

@@ -18,4 +18,9 @@
     &--purple {
         background-color: $mainPurple;
     }
+
+    &:hover {
+        background-color: $darkPurple;
+        transition: all ease-in 0.3s;
+    }
 }

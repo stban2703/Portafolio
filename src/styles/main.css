@@ -308,10 +308,13 @@ input[type=button] {
 }
 
 .header__nav li {
+  margin-right: 50px;
+}
+
+.header__nav li a {
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  margin-right: 50px;
 }
 
 .banner {
@@ -1081,6 +1084,12 @@ input[type=button] {
 
 .button--purple {
   background-color: #8582D9;
+}
+
+.button:hover {
+  background-color: #4d4a90;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 html,
