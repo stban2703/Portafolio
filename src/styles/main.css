@@ -908,7 +908,7 @@ input[type=button] {
 .project__preview {
   width: 345px;
   height: 280px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #366B8B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,7 +951,7 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .footer__container {
@@ -997,8 +997,7 @@ input[type=button] {
 }
 
 .footer__logo {
-  width: 100%;
-  max-width: 500px;
+  width: 350px;
 }
 
 .footer__networks {
@@ -1012,6 +1011,12 @@ input[type=button] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  margin-top: 10px;
+}
+
+.footer__item {
+  width: 50px;
+  margin-left: 10px;
 }
 
 .contact {
