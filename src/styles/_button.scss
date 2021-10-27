@@ -5,6 +5,7 @@
     //width: 100%;
     padding: 10px 40px;
     width: fit-content;
+    transition: all ease-in 0.2s;
 
     p {
         font-family: $rubik-font;
@@ -21,6 +22,6 @@
 
     &:hover {
         background-color: $darkPurple;
-        transition: all ease-in 0.3s;
+        transition: all ease-in 0.2s;
     }
 }

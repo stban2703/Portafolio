@@ -1,0 +1,20 @@
+.gallery {
+    background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    height: fit-content;
+
+    &__view {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: $maxwidth;
+        
+    }
+}
