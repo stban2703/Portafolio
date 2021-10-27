@@ -10,6 +10,17 @@
         height: 280px;
         border-radius: 10px;
         background-color: $darkBlue;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    &__float {
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        right: 0;
     }
 
     &__title {
