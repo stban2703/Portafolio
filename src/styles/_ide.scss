@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
 
     &__img {
         max-width: none;
@@ -10,8 +11,7 @@
 
     &__title {
         font-family: $nunito-font;
-        font-size: $thirdTitle-fontSize;
-        font-weight: $semibold;
+        font-size: $text-fontSize;
         color: $mainGray;
     }
 }

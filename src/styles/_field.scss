@@ -10,15 +10,15 @@
         justify-content: center;
         background-color: white;
         border-radius: 10px;
-        min-width: 300px;
-        height: 264px;
+        min-width: 260px;
+        height: 220px;
     }
 
     &__title {
         margin-top: 15px;
         font-family: $nunito-font;
         font-weight: $semibold;
-        font-size: $thirdTitle-fontSize;
+        font-size: $text-fontSize;
         color: $mainGray;
     }
 
