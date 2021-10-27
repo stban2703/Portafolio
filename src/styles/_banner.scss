@@ -5,22 +5,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 150px;
-    position: relative;
-
-    /*&__logo {
-        position: absolute;
-        max-width: none;
-        padding: 20px 0;
-        right: -50px;
-
-        img {
-            height: 100%;
-        }
-    }*/
+    height: 100vh;
+    //margin-top: 70px;
+    padding-top: 70px;
 
     &__container {
         width: 100%;
+        height: 100%;
         max-width: $maxwidth;
         z-index: 1;
         padding: $container-padding;
@@ -28,6 +19,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     &__imgContainer {
@@ -35,12 +27,14 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        //background-position-x: 120%;
-        width: 500px;
+        width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
     }
 
     &__image {

@@ -10,17 +10,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 30px;
 
         img {
             max-width: none;
+            width: 100%;
         }
     }
     
     &__title {
         font-family: $nunito-font;
-        font-size: $thirdTitle-fontSize;
-        color: $mainGray;
+        font-size: $text-fontSize;
         font-weight: $semibold;
+        color: $mainGray;
     }
 
     &--blue {

@@ -247,6 +247,7 @@ input[type=button] {
 .header {
   background-color: #000000;
   width: 100%;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +279,7 @@ input[type=button] {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   padding: 0 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -329,23 +330,14 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding-top: 150px;
-  position: relative;
-  /*&__logo {
-        position: absolute;
-        max-width: none;
-        padding: 20px 0;
-        right: -50px;
-
-        img {
-            height: 100%;
-        }
-    }*/
+  height: 100vh;
+  padding-top: 70px;
 }
 
 .banner__container {
   width: 100%;
-  max-width: 1000px;
+  height: 100%;
+  max-width: 1100px;
   z-index: 1;
   padding: 0 20px;
   display: -webkit-box;
@@ -359,6 +351,7 @@ input[type=button] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .banner__imgContainer {
@@ -366,7 +359,7 @@ input[type=button] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 500px;
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,6 +373,9 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
 .banner__image {
@@ -441,14 +437,13 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
   border-radius: 0 0 20px 20px;
 }
 
 .goDown img {
   max-width: none;
   width: 50px;
+  margin-bottom: 50px;
 }
 
 .aboutMeSection {
@@ -466,12 +461,12 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .aboutMeSection__container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,7 +529,7 @@ input[type=button] {
 }
 
 .aboutMeSection__parragraph {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .aboutMeSection__parragraph p {
@@ -550,7 +545,7 @@ input[type=button] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 480px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -610,17 +605,19 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 .softSkill__icon img {
   max-width: none;
+  width: 100%;
 }
 
 .softSkill__title {
   font-family: "Nunito", sans-serif;
-  font-size: 2rem;
-  color: #9E9E9E;
+  font-size: 1.25rem;
   font-weight: 600;
+  color: #9E9E9E;
 }
 
 .softSkill--blue .softSkill__icon {
@@ -802,7 +799,7 @@ input[type=button] {
 
 .myWork__container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +943,7 @@ input[type=button] {
 
 .footer__container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
