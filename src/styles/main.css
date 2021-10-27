@@ -903,13 +903,16 @@ input[type=button] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 40px;
 }
 
 .project__preview {
-  width: 345px;
-  height: 280px;
+  width: 328px;
+  height: 266px;
   border-radius: 5px;
   background-color: #366B8B;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,15 +925,17 @@ input[type=button] {
 
 .project__float {
   position: absolute;
-  width: 250px;
-  bottom: 0;
+  height: 300px;
   right: 0;
+  bottom: 0;
 }
 
 .project__title {
+  width: 100%;
+  text-align: left;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: white;
   margin-top: 10px;
 }

@@ -4,12 +4,15 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    margin-top: 40px;
 
     &__preview {
-        width: 345px;
-        height: 280px;
+        width: 328px;
+        height: 266px;
         border-radius: 5px;
         background-color: $darkBlue;
+        background-repeat: no-repeat;
+        background-size: contain;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -17,15 +20,17 @@
 
     &__float {
         position: absolute;
-        width: 250px;
-        bottom: 0;
+        height: 300px;
         right: 0;
+        bottom: 0;
     }
 
     &__title {
+        width: 100%;
+        text-align: left;
         font-family: $nunito-font;
         font-weight: $semibold;
-        font-size: $thirdTitle-fontSize;
+        font-size: $text-fontSize;
         color: white;
         margin-top: 10px;
     }
