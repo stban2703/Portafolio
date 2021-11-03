@@ -25,6 +25,14 @@ $(document).ready(function () {
     });
 
 
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if(scroll >= $("#aboutMe").offset().top) {
+            
+        }
+    });
+
+
     const gallery = $(".gallery")
     const projectsRowRight = $(".myWork__row--right")
     const projectsRowLeft = $(".myWork__row--left")
@@ -47,7 +55,8 @@ $(document).ready(function () {
         projectElement.click(function() {
             //window.history.pushState({}, )
             //$("body").addClass("notScroll")
-            //gallery.removeClass("hidden")
+            gallery.removeClass("hidden")
+            $(".main").addClass("hidden")
         })
 
         if (i < 3) {
