@@ -942,10 +942,6 @@ input[type=button] {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-transition: all ease-out 0.2s;
-  transition: all ease-out 0.2s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .project__float {
@@ -953,6 +949,10 @@ input[type=button] {
   height: 300px;
   right: 0;
   bottom: 0;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .project__title {
@@ -970,8 +970,8 @@ input[type=button] {
 }
 
 .project:hover .project__float {
-  -webkit-transition: all ease-in 0.2s;
-  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
