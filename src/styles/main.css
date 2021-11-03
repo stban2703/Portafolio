@@ -382,8 +382,8 @@ input[type=button] {
 
 .banner__image {
   background-color: #62c4f6;
-  width: 440px;
-  height: 440px;
+  width: 500px;
+  height: 500px;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,7 +411,7 @@ input[type=button] {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .banner__title {
@@ -435,7 +435,8 @@ input[type=button] {
   color: #FFFFFF;
   margin: 10px 0;
   margin-bottom: 20px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .goDown {
@@ -937,10 +938,10 @@ input[type=button] {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .project__float {

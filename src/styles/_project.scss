@@ -16,8 +16,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        transform: scale(1);
         transition: all ease-out 0.2s;
+        transform: scale(1);
     }
 
     &__float {
