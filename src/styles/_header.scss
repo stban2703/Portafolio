@@ -40,11 +40,14 @@
 
         li {
             margin-right: 50px;
-
             a {
                 color: $white-text;
                 font-family: $rubik-font;
                 font-size: $header-fontSize;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }

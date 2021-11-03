@@ -1,4 +1,30 @@
 $(document).ready(function () {  
+
+    $("#moveToHome").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#home").offset().top
+        }, 500);
+    });
+
+    $("#moveToAboutMe").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#aboutMe").offset().top
+        }, 500);
+    });
+
+    $("#moveToMyWork").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#myWork").offset().top
+        }, 500);
+    });
+
+    $("#moveToContactMe").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#contactMe").offset().top
+        }, 500);
+    });
+
+
     const gallery = $(".gallery")
     const projectsRowRight = $(".myWork__row--right")
     const projectsRowLeft = $(".myWork__row--left")
