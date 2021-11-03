@@ -16,6 +16,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        transform: scale(1);
+        transition: all ease-out 0.2s;
     }
 
     &__float {
@@ -37,10 +39,11 @@
 
     &:hover {
         cursor: pointer;
-
         .project__float {
-            animation: pulse 1s infinite;
-            animation-timing-function: ease-out; 
+            //animation: pulse 1s infinite;
+            //animation-timing-function: ease-out; 
+            transition: all ease-in 0.2s;
+            transform: scale(1.05);
         }
     }
 }

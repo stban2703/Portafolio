@@ -31,6 +31,14 @@ body {
     background-size: cover;
 }
 
+.hidden {
+    display: none;
+}
+
+.notScroll {
+    overflow: hidden;
+}
+
 .boldPhrase {
     font-weight: 700;
 

@@ -924,6 +924,10 @@ input[type=button] {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
 }
 
 .project__float {
@@ -948,10 +952,10 @@ input[type=button] {
 }
 
 .project:hover .project__float {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @-webkit-keyframes pulse {
@@ -1105,22 +1109,26 @@ input[type=button] {
 }
 
 .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   z-index: 99;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .gallery__view {
@@ -1177,6 +1185,14 @@ body {
   background-image: url("./../../public/img/patternbg.png");
   background-repeat: repeat-y;
   background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.notScroll {
+  overflow: hidden;
 }
 
 .boldPhrase {
