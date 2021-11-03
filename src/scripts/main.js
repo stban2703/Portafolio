@@ -18,7 +18,7 @@ $(document).ready(function () {
         }, 500);
     });
 
-    $("#moveToContactMe").click(function() {
+    $(".moveToContactMe").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contactMe").offset().top
         }, 500);
