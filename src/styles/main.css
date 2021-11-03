@@ -333,7 +333,6 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100vh;
   padding-top: 70px;
 }
 
@@ -343,6 +342,8 @@ input[type=button] {
   max-width: 1100px;
   z-index: 1;
   padding: 0 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,15 +355,9 @@ input[type=button] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .banner__imgContainer {
-  background-image: url("./../../public/img/logobannerneon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,16 +371,27 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
 }
 
 .banner__image {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 100%;
+  background-color: #62c4f6;
+  width: 440px;
   height: 440px;
-  border-radius: 25px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 1px;
+}
+
+.banner__image img {
+  width: 100%;
+  max-width: none;
+  position: relative;
+  bottom: -1px;
 }
 
 .banner__info {
