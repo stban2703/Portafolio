@@ -13,39 +13,37 @@ const galleryScreen = () => {
 
     $(".mainPage").addClass("hidden")
     $(".gallery").removeClass("hidden")
-    $(".gallery__title").text("Cargando...")
+    $(".loader").removeClass("hidden")
     $(".gallery__content").addClass("gallery__content--preload")
-    $(".gallery__content").html(`<div class="lds-ring"><div></div><div></div><div></div><div></div></div>`)
-
     window.scrollTo(0, 0)
-    
+    switch (projectRoute) {
+        case "solidar":
+            $(".gallery__title").text("Solidar")
+            $(".gallery__view").html(solidarPage)
+            break;
+        case "liberalasaves":
+            $(".gallery__title").text("Libera las aves")
+            $(".gallery__view").html(liberaPage)
+            break;
+        case "eltestigo":
+            $(".gallery__title").text("El testigo")
+            $(".gallery__view").html(elTestigoPage)
+            break;
+        case "mimarca":
+            $(".gallery__title").text("Mi marca")
+            $(".gallery__view").html(miMarcaPage)
+            break;
+        case "fit2":
+            $(".gallery__title").text("Fit 2")
+            $(".gallery__view").html(fit2Page)
+            break;
+        case "samsunglandingpage":
+            $(".gallery__title").text("Samsung Landing Page")
+            $(".gallery__view").html(samsungLandingPage)
+            break;
+    }
+    $(".gallery__content").removeClass("gallery__content--preload")
     setTimeout(() => {
-        $(".gallery__content").removeClass("gallery__content--preload")
-        switch (projectRoute) {
-            case "solidar":
-                $(".gallery__title").text("Solidar")
-                $(".gallery__content").html(solidarPage)
-                break;
-            case "liberalasaves":
-                $(".gallery__title").text("Libera las aves")
-                $(".gallery__content").html(liberaPage)
-                break;
-            case "eltestigo":
-                $(".gallery__title").text("El testigo")
-                $(".gallery__content").html(elTestigoPage)
-                break;
-            case "mimarca":
-                $(".gallery__title").text("Mi marca")
-                $(".gallery__content").html(miMarcaPage)
-                break;
-            case "fit2":
-                $(".gallery__title").text("Fit 2")
-                $(".gallery__content").html(fit2Page)
-                break;
-            case "samsunglandingpage":
-                $(".gallery__title").text("Samsung Landing Page")
-                $(".gallery__content").html(samsungLandingPage)
-                break;
-        }
-    }, 1000)
+        $(".loader").addClass("hidden")
+    }, 1200)
 }

@@ -40,7 +40,6 @@ const projectsList = [
 
 const solidarPage = 
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/solidar/solidar00.gif" alt="">
     </div>
@@ -77,12 +76,10 @@ const solidarPage =
     <div class="gallery__image">
         <img src="./public/projects/solidar/solidar10.jpg" alt="">
     </div>
-</section>
 `
 
 const liberaPage = 
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/liberalasaves/libera00.png" alt="">
     </div>
@@ -107,12 +104,10 @@ const liberaPage =
     <div class="gallery__image">
         <img src="./public/projects/liberalasaves/libera07.png" alt="">
     </div>
-</section>
 `
 
 const elTestigoPage = 
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/eltestigo/eltestigo00.png" alt="">
     </div>
@@ -163,12 +158,10 @@ const elTestigoPage =
     <div class="gallery__image">
         <img src="./public/projects/eltestigo/eltestigo13.png" alt="">
     </div>
-</section>
 `
 
 const miMarcaPage =
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/mimarca/mimarca00.gif" alt="">
     </div>
@@ -190,12 +183,10 @@ const miMarcaPage =
     <div class="gallery__image">
         <img src="./public/projects/mimarca/mimarca06.jpg" alt="">
     </div>
-</section>
 `
 
 const fit2Page = 
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/fit2/fit200.jpg" alt="">
     </div>
@@ -226,12 +217,10 @@ const fit2Page =
     <div class="gallery__image">
         <img src="./public/projects/fit2/fit209.jpg" alt="">
     </div>
-</section>
 `
 
 const samsungLandingPage =
 `
-<section class="gallery__view">
     <div class="gallery__image">
         <img src="./public/projects/samsunglandingpage/landingsamsung00.jpg" alt="">
     </div>
@@ -253,5 +242,4 @@ const samsungLandingPage =
     <div class="gallery__image">
         <img src="./public/projects/samsunglandingpage/landingsamsung06.jpg" alt="">
     </div>
-</section>
 `
