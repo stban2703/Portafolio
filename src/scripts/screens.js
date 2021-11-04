@@ -10,9 +10,9 @@ const homeScreen = () => {
 
 const galleryScreen = () => {
     comeFromHome = true
-
     $(".mainPage").addClass("hidden")
     $(".gallery").removeClass("hidden")
+    $(".gallery__view").removeClass("animate__animated animate__fadeIn")
     $(".loader").removeClass("hidden")
     $(".gallery__content").addClass("gallery__content--preload")
     window.scrollTo(0, 0)
@@ -45,5 +45,6 @@ const galleryScreen = () => {
     $(".gallery__content").removeClass("gallery__content--preload")
     setTimeout(() => {
         $(".loader").addClass("hidden")
+        $(".gallery__view").addClass("animate__animated animate__fadeIn")
     }, 1200)
 }
