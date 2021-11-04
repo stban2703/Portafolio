@@ -27,5 +27,11 @@ const galleryScreen = () => {
         case "mimarca":
             $(".gallery").html(miMarcaPage)
             break;
+        case "fit2":
+            $(".gallery").html(fit2Page)
+            break;
+        case "samsunglandingpage":
+            $(".gallery").html(samsungLandingPage)
+            break;
     }
 }
