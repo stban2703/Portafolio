@@ -5,7 +5,6 @@ $(document).ready(function () {
     moveToSection("#moveToAboutMe", "aboutMe")
     moveToSection(".moveToContactMe", "contactMe")
 
-    const gallery = $(".gallery")
     const projectsRowRight = $(".myWork__row--right")
     const projectsRowLeft = $(".myWork__row--left")
 
@@ -33,6 +32,14 @@ $(document).ready(function () {
             projectsRowLeft.append(projectElement)
         }
     })
+
+    closeGallery()
+
+    function closeGallery() {
+        $(".gallery__close").click(() => {
+            redirect("/home")
+        })
+    }
 
     function moveToSection(target, section) {
         $(`${target}`).click(function () {

@@ -13,25 +13,30 @@ const galleryScreen = () => {
     $(".gallery").removeClass("hidden")
     $(".mainPage").addClass("hidden")
     window.scrollTo(0, 0)
-    console.log(projectRoute)
     switch (projectRoute) {
         case "solidar":
-            $(".gallery").html(solidarPage)
+            $(".gallery__title").text("Solidar")
+            $(".gallery__content").html(solidarPage)
             break;
         case "liberalasaves":
-            $(".gallery").html(liberaPage)
+            $(".gallery__title").text("Libera las aves")
+            $(".gallery__content").html(liberaPage)
             break;
         case "eltestigo":
-            $(".gallery").html(elTestigoPage)
+            $(".gallery__title").text("El testigo")
+            $(".gallery__content").html(elTestigoPage)
             break;
         case "mimarca":
-            $(".gallery").html(miMarcaPage)
+            $(".gallery__title").text("Mi marca")
+            $(".gallery__content").html(miMarcaPage)
             break;
         case "fit2":
-            $(".gallery").html(fit2Page)
+            $(".gallery__title").text("Fit 2")
+            $(".gallery__content").html(fit2Page)
             break;
         case "samsunglandingpage":
-            $(".gallery").html(samsungLandingPage)
+            $(".gallery__title").text("Samsung Landing Page")
+            $(".gallery__content").html(samsungLandingPage)
             break;
     }
 }
