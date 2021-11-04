@@ -10,289 +10,301 @@
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="./src/scripts/projectList.js"></script>
+    <script src="./src/scripts/projectList.js" defer></script>
     <script src="./src/scripts/main.js" defer></script>
 </head>
 
 <body>
-    <header class="header main">
-        <section class="header__container">
-            <section class="header__logo">
-                <img src="./public/img/logoheader.svg" alt="Logo">
+    <main class="mainPage">
+        <header class="header">
+            <section class="header__container">
+                <section class="header__logo">
+                    <img src="./public/img/logoheader.svg" alt="Logo">
+                </section>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a id="moveToHome">Home</a></li>
+                        <li><a id="moveToAboutMe">About me</a></li>
+                        <li><a id="moveToMyWork">My work</a></li>
+                    </ul>
+                </nav>
+                <button class="button button--purple moveToContactMe">
+                    <p>Contact me</p>
+                </button>
             </section>
-            <nav class="header__nav">
-                <ul>
-                    <li><a id="moveToHome">Home</a></li>
-                    <li><a id="moveToAboutMe">About me</a></li>
-                    <li><a id="moveToMyWork">My work</a></li>
-                </ul>
-            </nav>
-            <button class="button button--purple moveToContactMe">
-                <p>Contact me</p>
-            </button>
-        </section>
-    </header>
-    <article class="banner main" id="home">
-        <section class="banner__container">
-            <section class="banner__section">
-                <div class="banner__info animate__animated animate__fadeInUp">
-                    <h1 class="banner__title">Esteban Volveras</h1>
-                    <p class="banner__subtitle">Interaction Designer</p>
-                    <p class="banner__text">I’m a developer who loves to create web pages and design prototypes.</p>
-                    <button class="button button--purple moveToContactMe">
-                        <p>Let's talk!</p>
-                    </button>
-                </div>
-            </section>
-            <section class="banner__imgContainer animate__animated animate__fadeInDown">
-                <div class="banner__image">
-                    <img src="./public/img/MaskPhoto.png" alt="">
-                </div>
-            </section>
-        </section>
-        <div class="goDown">
-            <img src="./public/img/scrolldownicon.svg" alt="Scroll Down">
-        </div>
-    </article>
-    <article class="aboutMeSection main" id="aboutMe">
-        <section class="aboutMeSection__container">
-            <section class="aboutMeSection__segment">
-                <div class="aboutMeSection__title">
-                    <div class="aboutMeSection__ellipse aboutMeSection__ellipse--blue">
-
+        </header>
+        <article class="banner" id="home">
+            <section class="banner__container">
+                <section class="banner__section">
+                    <div class="banner__info animate__animated animate__fadeInUp">
+                        <h1 class="banner__title">Esteban Volveras</h1>
+                        <p class="banner__subtitle">Interaction Designer</p>
+                        <p class="banner__text">I’m a developer who loves to create web pages and design prototypes.</p>
+                        <button class="button button--purple moveToContactMe">
+                            <p>Let's talk!</p>
+                        </button>
                     </div>
-                    <p>About me</p>
-                </div>
-                <div class="aboutMeSection__parragraph">
-                    <p>
-                        I’m studying as a UX/UI designer and as a programmer. However, my professional interest is
-                        programming, because I want to work as a <span style="color: #8582D9;">developer.</span>
-                    </p>
-                </div>
-            </section>
-            <section class="aboutMeSection__segment aboutMeSection__segment--right">
-                <section class="aboutMeSection__skills">
-                    <div class="softSkill softSkill--blue">
-                        <div class="softSkill__icon">
-                            <img src="./public/img/flexibility.svg" alt="Flexibility">
-                        </div>
-                        <h3 class="softSkill__title">Flexibility</h3>
-                    </div>
-                    <div class="softSkill softSkill--purple">
-                        <div class="softSkill__icon">
-                            <img src="./public/img/autonomy.svg" alt="Autonomy">
-                        </div>
-                        <h3 class="softSkill__title">Autonomy</h3>
-                    </div>
-                    <div class="softSkill softSkill--purple">
-                        <div class="softSkill__icon">
-                            <img src="./public/img/responsible.svg" alt="Responsible">
-                        </div>
-                        <h3 class="softSkill__title">Responsible</h3>
-                    </div>
-                    <div class="softSkill softSkill--blue">
-                        <div class="softSkill__icon">
-                            <img src="./public/img/listening.svg" alt="Listening">
-                        </div>
-                        <h3 class="softSkill__title">Listening</h3>
+                </section>
+                <section class="banner__imgContainer animate__animated animate__fadeInDown">
+                    <div class="banner__image">
+                        <img src="./public/img/MaskPhoto.png" alt="">
                     </div>
                 </section>
             </section>
-        </section>
-    </article>
-    <article class="aboutMeSection aboutMeSection--light main">
-        <section class="aboutMeSection__container">
-            <section class="aboutMeSection__segment">
-                <div class="codeWindow">
-                    <section class="codeWindow__container">
-                        <ol class="codeWindow__editor">
-                            <li class="codeWindow__line">
-                                <p class="codeWindow__text"><span style="color: #8582D9;">function</span> <span
-                                        style="color: #62C4F6;">showMyLanguages</span>() {</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--firstIndent">
-                                <p class="codeWindow__text"><span style="color: #8582D9;">let</span> list <span
-                                        style="color: #62C4F6;">=</span> [</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--secondIndent">
-                                <p class="codeWindow__text codeWindow__text--comment">“Java”</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
-                                <p class="codeWindow__text codeWindow__text--comment">“JavaScript”</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
-                                <p class="codeWindow__text codeWindow__text--comment">“TypeScript”</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
-                                <p class="codeWindow__text codeWindow__text--comment">“Kotlin”</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--firstIndent">
-                                <p class="codeWindow__text">]</p>
-                            </li>
-                            <li class="codeWindow__line codeWindow__line--firstIndent">
-                                <p class="codeWindow__text">console.<span style="color: #62C4F6;">log</span>(list)
-                                </p>
-                            </li>
-                            <li class="codeWindow__line">
-                                <p class="codeWindow__text">}</p>
-                            </li>
-                        </ol>
+            <div class="goDown">
+                <img src="./public/img/scrolldownicon.svg" alt="Scroll Down">
+            </div>
+        </article>
+        <article class="aboutMeSection" id="aboutMe">
+            <section class="aboutMeSection__container">
+                <section class="aboutMeSection__segment">
+                    <div class="aboutMeSection__title">
+                        <div class="aboutMeSection__ellipse aboutMeSection__ellipse--blue">
+
+                        </div>
+                        <p>About me</p>
+                    </div>
+                    <div class="aboutMeSection__parragraph">
+                        <p>
+                            I’m studying as a UX/UI designer and as a programmer. However, my professional interest is
+                            programming, because I want to work as a <span style="color: #8582D9;">developer.</span>
+                        </p>
+                    </div>
+                </section>
+                <section class="aboutMeSection__segment aboutMeSection__segment--right">
+                    <section class="aboutMeSection__skills">
+                        <div class="softSkill softSkill--blue">
+                            <div class="softSkill__icon">
+                                <img src="./public/img/flexibility.svg" alt="Flexibility">
+                            </div>
+                            <h3 class="softSkill__title">Flexibility</h3>
+                        </div>
+                        <div class="softSkill softSkill--purple">
+                            <div class="softSkill__icon">
+                                <img src="./public/img/autonomy.svg" alt="Autonomy">
+                            </div>
+                            <h3 class="softSkill__title">Autonomy</h3>
+                        </div>
+                        <div class="softSkill softSkill--purple">
+                            <div class="softSkill__icon">
+                                <img src="./public/img/responsible.svg" alt="Responsible">
+                            </div>
+                            <h3 class="softSkill__title">Responsible</h3>
+                        </div>
+                        <div class="softSkill softSkill--blue">
+                            <div class="softSkill__icon">
+                                <img src="./public/img/listening.svg" alt="Listening">
+                            </div>
+                            <h3 class="softSkill__title">Listening</h3>
+                        </div>
                     </section>
-                </div>
-            </section>
-            <section class="aboutMeSection__segment aboutMeSection__segment--right">
-                <div class="aboutMeSection__parragraph aboutMeSection__parragraph--right">
-                    <p>
-                        I’m able to <span style="color: #8582D9;">learn</span> and <span style="color: #8582D9;">adapt</span> to different <span style="color: #8582D9;">frameworks</span> and <span style="color: #8582D9;">programming languages</span>, this has allowed me to create <span style="color: #8582D9;">innovative</span> and <span style="color: #8582D9;">interactive</span> solutions to solve different problems for users.
-                    </p>
-                </div>
-                <section class="aboutMeSection__ide">
-                    <div class="ide">
-                        <img class="ide__icon" src="./public/img/react.svg" alt="React">
-                        <h3 class="ide__title">React</h3>
-                    </div>
-                    <div class="ide">
-                        <img class="ide__icon" src="./public/img/androidstudio.svg" alt="Android Studio">
-                        <h3 class="ide__title">Android</h3>
-                    </div>
-                    <div class="ide">
-                        <img class="ide__icon" src="./public/img/figma.svg" alt="Figm">
-                        <h3 class="ide__title">Figma</h3>
-                    </div>
                 </section>
             </section>
-        </section>
-    </article>
-    <article class="aboutMeSection aboutMeSection--light main">
-        <section class="aboutMeSection__container">
-            <section class="aboutMeSection__segment">
-                <div class="aboutMeSection__title">
-                    <div class="aboutMeSection__ellipse aboutMeSection__ellipse--purple">
+        </article>
+        <article class="aboutMeSection aboutMeSection--light">
+            <section class="aboutMeSection__container">
+                <section class="aboutMeSection__segment">
+                    <div class="codeWindow">
+                        <section class="codeWindow__container">
+                            <ol class="codeWindow__editor">
+                                <li class="codeWindow__line">
+                                    <p class="codeWindow__text"><span style="color: #8582D9;">function</span> <span
+                                            style="color: #62C4F6;">showMyLanguages</span>() {</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--firstIndent">
+                                    <p class="codeWindow__text"><span style="color: #8582D9;">let</span> list <span
+                                            style="color: #62C4F6;">=</span> [</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--secondIndent">
+                                    <p class="codeWindow__text codeWindow__text--comment">“Java”</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
+                                    <p class="codeWindow__text codeWindow__text--comment">“JavaScript”</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
+                                    <p class="codeWindow__text codeWindow__text--comment">“TypeScript”</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--comment codeWindow__line--secondIndent">
+                                    <p class="codeWindow__text codeWindow__text--comment">“Kotlin”</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--firstIndent">
+                                    <p class="codeWindow__text">]</p>
+                                </li>
+                                <li class="codeWindow__line codeWindow__line--firstIndent">
+                                    <p class="codeWindow__text">console.<span style="color: #62C4F6;">log</span>(list)
+                                    </p>
+                                </li>
+                                <li class="codeWindow__line">
+                                    <p class="codeWindow__text">}</p>
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+                </section>
+                <section class="aboutMeSection__segment aboutMeSection__segment--right">
+                    <div class="aboutMeSection__parragraph aboutMeSection__parragraph--right">
+                        <p>
+                            I’m able to <span style="color: #8582D9;">learn</span> and <span
+                                style="color: #8582D9;">adapt</span> to different <span
+                                style="color: #8582D9;">frameworks</span> and <span style="color: #8582D9;">programming
+                                languages</span>, this has allowed me to create <span
+                                style="color: #8582D9;">innovative</span> and <span
+                                style="color: #8582D9;">interactive</span> solutions to solve different problems for
+                            users.
+                        </p>
+                    </div>
+                    <section class="aboutMeSection__ide">
+                        <div class="ide">
+                            <img class="ide__icon" src="./public/img/react.svg" alt="React">
+                            <h3 class="ide__title">React</h3>
+                        </div>
+                        <div class="ide">
+                            <img class="ide__icon" src="./public/img/androidstudio.svg" alt="Android Studio">
+                            <h3 class="ide__title">Android</h3>
+                        </div>
+                        <div class="ide">
+                            <img class="ide__icon" src="./public/img/figma.svg" alt="Figm">
+                            <h3 class="ide__title">Figma</h3>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </article>
+        <article class="aboutMeSection aboutMeSection--light">
+            <section class="aboutMeSection__container">
+                <section class="aboutMeSection__segment">
+                    <div class="aboutMeSection__title">
+                        <div class="aboutMeSection__ellipse aboutMeSection__ellipse--purple">
 
+                        </div>
+                        <p>Fields of interest</p>
                     </div>
-                    <p>Fields of interest</p>
-                </div>
-                <section class="aboutMeSection__fields">
-                    <div class="field field--lightBlue">
-                        <section class="field__icon">
-                            <img src="./public/img/androidfield.svg" alt="Android apps">
-                        </section>
-                        <h3 class="field__title">Mobile Apps</h3>
-                    </div>
-                    <div class="field field--purple">
-                        <section class="field__icon">
-                            <img src="./public/img/webfield.svg" alt="Web development">
-                        </section>
-                        <h3 class="field__title">Web development</h3>
-                    </div>
-                    <div class="field field--darkBlue">
-                        <section class="field__icon">
-                            <img src="./public/img/prototypefield.svg" alt="Prototype design">
-                        </section>
-                        <h3 class="field__title">Prototype design</h3>
-                    </div>
+                    <section class="aboutMeSection__fields">
+                        <div class="field field--lightBlue">
+                            <section class="field__icon">
+                                <img src="./public/img/androidfield.svg" alt="Android apps">
+                            </section>
+                            <h3 class="field__title">Mobile Apps</h3>
+                        </div>
+                        <div class="field field--purple">
+                            <section class="field__icon">
+                                <img src="./public/img/webfield.svg" alt="Web development">
+                            </section>
+                            <h3 class="field__title">Web development</h3>
+                        </div>
+                        <div class="field field--darkBlue">
+                            <section class="field__icon">
+                                <img src="./public/img/prototypefield.svg" alt="Prototype design">
+                            </section>
+                            <h3 class="field__title">Prototype design</h3>
+                        </div>
+                    </section>
                 </section>
             </section>
-        </section>
-    </article>
-    <div class="transition transition--black main">
+        </article>
+        <div class="transition transition--black">
 
-    </div>
-    <article class="myWork main" id="myWork">
-        <section class="myWork__container">
-            <section class="myWork__title">
-                <h3>My work</h3>
-            </section>
-            <section class="myWork__body">
-                <section class="myWork__row myWork__row--right">
-                    <div class="project" id="solidar">
-                        <section class="project__preview" style="background-image: url('./public/img/solidar.png');">
-                            <img class="project__float" src="./public/img/solidarfloat.png" alt="Phone">
-                        </section>
-                        <h3 class="project__title">
-                            Solidar
-                        </h3>
-                    </div>
-                    <div class="project">
-                        <section class="project__preview"
-                            style="background-image: url('./public/img/liberalasaves.png');">
-                            <img class="project__float" src="./public/img/liberalasavesfloat.png" alt="Bird">
-                        </section>
-                        <h3 class="project__title">
-                            Libera a las aves
-                        </h3>
-                    </div>
-                    <div class="project">
-                        <section class="project__preview" style="background-image: url('./public/img/eltestigo.png');">
-                            <img class="project__float" src="./public/img/eltestigofloat.png" alt="Death">
-                        </section>
-                        <h3 class="project__title">
-                            El testigo
-                        </h3>
-                    </div>
+        </div>
+        <article class="myWork" id="myWork">
+            <section class="myWork__container">
+                <section class="myWork__title">
+                    <h3>My work</h3>
                 </section>
-                <section class="myWork__row myWork__row--left">
-                    <div class="project">
-                        <section class="project__preview" style="background-image: url('./public/img/mimarca.png');">
-                            <img class="project__float" src="./public/img/mimarcafloat.png" alt="Brand">
-                        </section>
-                        <h3 class="project__title">
-                            Mi marca
-                        </h3>
-                    </div>
-                    <div class="project">
-                        <section class="project__preview" style="background-image: url('./public/img/fit2.png');">
-                            <img class="project__float" src="./public/img/fit2float.png" alt="Fit2">
-                        </section>
-                        <h3 class="project__title">
-                            Fit2
-                        </h3>
-                    </div>
-                    <div class="project">
-                        <section class="project__preview" style="background-image: url('./public/img/landing.png');">
-                            <img class="project__float" src="./public/img/landingfloat.png" alt="Landing">
-                        </section>
-                        <h3 class="project__title">
-                            Samsung Landing Page
-                        </h3>
-                    </div>
-                </section>
-            </section>
-        </section>
-    </article>
-    <footer class="footer main" id="contactMe">
-        <section class="footer__container">
-            <section class="footer__info">
-                <h3 class="footer__title">
-                    Let's talk!
-                </h3>
-                <section class="footer__contact">
-                    <div class="contact">
-                        <section class="contact__icon">
-                            <img src="./public/img/gmail.svg" alt="Gmail">
-                        </section>
-                        <p class="contact__text">s.t.ban1401@gmail.com</p>
-                    </div>
-                    <div class="contact">
-                        <section class="contact__icon">
-                            <img src="./public/img/whatsapp.svg" alt="WhatsApp">
-                        </section>
-                        <p class="contact__text">+57 301 672-3867</p>
-                    </div>
+                <section class="myWork__body">
+                    <section class="myWork__row myWork__row--right">
+                        <div class="project" id="solidar">
+                            <section class="project__preview"
+                                style="background-image: url('./public/img/solidar.png');">
+                                <img class="project__float" src="./public/img/solidarfloat.png" alt="Phone">
+                            </section>
+                            <h3 class="project__title">
+                                Solidar
+                            </h3>
+                        </div>
+                        <div class="project">
+                            <section class="project__preview"
+                                style="background-image: url('./public/img/liberalasaves.png');">
+                                <img class="project__float" src="./public/img/liberalasavesfloat.png" alt="Bird">
+                            </section>
+                            <h3 class="project__title">
+                                Libera a las aves
+                            </h3>
+                        </div>
+                        <div class="project">
+                            <section class="project__preview"
+                                style="background-image: url('./public/img/eltestigo.png');">
+                                <img class="project__float" src="./public/img/eltestigofloat.png" alt="Death">
+                            </section>
+                            <h3 class="project__title">
+                                El testigo
+                            </h3>
+                        </div>
+                    </section>
+                    <section class="myWork__row myWork__row--left">
+                        <div class="project">
+                            <section class="project__preview"
+                                style="background-image: url('./public/img/mimarca.png');">
+                                <img class="project__float" src="./public/img/mimarcafloat.png" alt="Brand">
+                            </section>
+                            <h3 class="project__title">
+                                Mi marca
+                            </h3>
+                        </div>
+                        <div class="project">
+                            <section class="project__preview" style="background-image: url('./public/img/fit2.png');">
+                                <img class="project__float" src="./public/img/fit2float.png" alt="Fit2">
+                            </section>
+                            <h3 class="project__title">
+                                Fit2
+                            </h3>
+                        </div>
+                        <div class="project">
+                            <section class="project__preview"
+                                style="background-image: url('./public/img/landing.png');">
+                                <img class="project__float" src="./public/img/landingfloat.png" alt="Landing">
+                            </section>
+                            <h3 class="project__title">
+                                Samsung Landing Page
+                            </h3>
+                        </div>
+                    </section>
                 </section>
             </section>
-            <section class="footer__socialMedia">
-                <div class="footer__logo">
-                    <img src="./public/img/biglogo.svg" alt="Logo">
-                </div>
-                <section class="footer__networks">
-                    <a class="footer__item"><img src="./public/img/github.svg" alt="Github"></a>
-                    <a class="footer__item"><img src="./public/img/behance.svg" alt="Behance"></a>
-                    <a class="footer__item"><img src="./public/img/linkedin.svg" alt="LinkedIn"></a>
+        </article>
+        <footer class="footer" id="contactMe">
+            <section class="footer__container">
+                <section class="footer__info">
+                    <h3 class="footer__title">
+                        Let's talk!
+                    </h3>
+                    <section class="footer__contact">
+                        <div class="contact">
+                            <section class="contact__icon">
+                                <img src="./public/img/gmail.svg" alt="Gmail">
+                            </section>
+                            <p class="contact__text">s.t.ban1401@gmail.com</p>
+                        </div>
+                        <div class="contact">
+                            <section class="contact__icon">
+                                <img src="./public/img/whatsapp.svg" alt="WhatsApp">
+                            </section>
+                            <p class="contact__text">+57 301 672-3867</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="footer__socialMedia">
+                    <div class="footer__logo">
+                        <img src="./public/img/biglogo.svg" alt="Logo">
+                    </div>
+                    <section class="footer__networks">
+                        <a class="footer__item"><img src="./public/img/github.svg" alt="Github"></a>
+                        <a class="footer__item"><img src="./public/img/behance.svg" alt="Behance"></a>
+                        <a class="footer__item"><img src="./public/img/linkedin.svg" alt="LinkedIn"></a>
+                    </section>
                 </section>
             </section>
-        </section>
-    </footer>
+        </footer>
+    </main>
     <div class="gallery hidden">
         <section class="gallery__view">
             <img src="./public/projects/solidar/solidar01.gif" alt="">

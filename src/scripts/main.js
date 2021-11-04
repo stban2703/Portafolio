@@ -1,37 +1,16 @@
-$(document).ready(function () {  
+$(document).ready(function () {
 
-    $("#moveToHome").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#home").offset().top
-        }, 500);
-    });
+    moveToSection("#moveToHome", "home")
+    moveToSection("#moveToAboutMe", "aboutMe")
+    moveToSection("#moveToMyWork", "myWork")
+    moveToSection("#moveToAboutMe", "aboutMe")
+    moveToSection(".moveToContactMe", "contactMe")
 
-    $("#moveToAboutMe").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#aboutMe").offset().top
-        }, 500);
-    });
-
-    $("#moveToMyWork").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#myWork").offset().top
-        }, 500);
-    });
-
-    $(".moveToContactMe").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#contactMe").offset().top
-        }, 500);
-    });
-
-
-    $(window).scroll(function (event) {
+    /*$(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
-        if(scroll >= $("#aboutMe").offset().top) {
-            
+        if (scroll >= $("#aboutMe").offset().top) {
         }
-    });
-
+    });*/
 
     const gallery = $(".gallery")
     const projectsRowRight = $(".myWork__row--right")
@@ -43,7 +22,7 @@ $(document).ready(function () {
     projectsList.forEach((e, i) => {
         //let productUrl = `index.html?${e.id}`;
         const projectElement = $(
-            `<section class="project">
+            `<section class="project" id="${e.id}">
                 <section class="project__preview" style="background-image: url('./public/img/${e.previewUrl}');">
                     <img class="project__float" src="./public/img/${e.floatUrl}" alt="${e.title}">
                 </section>
@@ -52,11 +31,12 @@ $(document).ready(function () {
                 </h3>
             </section>`)
 
-        projectElement.click(function() {
-            //window.history.pushState({}, )
+        projectElement.click(function (event) {
+            //router.navigate('/solidar')
+            //window.history.pushState({}, "Prueba", "/solidar")
             //$("body").addClass("notScroll")
-            gallery.removeClass("hidden")
-            $(".main").addClass("hidden")
+            /*gallery.removeClass("hidden")
+            $(".main").addClass("hidden")*/
         })
 
         if (i < 3) {
@@ -65,4 +45,12 @@ $(document).ready(function () {
             projectsRowLeft.append(projectElement)
         }
     })
+
+    function moveToSection(target, section) {
+        $(`${target}`).click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(`#${section}`).offset().top
+            }, 500);
+        });
+    }
 })
