@@ -5,11 +5,9 @@ $(document).ready(function () {
     moveToSection("#moveToAboutMe", "aboutMe")
     moveToSection(".moveToContactMe", "contactMe")
 
-    const projectsRowRight = $(".myWork__row--right")
-    const projectsRowLeft = $(".myWork__row--left")
+    const projectsContainer = $(".myWork__body")
 
-    projectsRowRight.html(``)
-    projectsRowLeft.html(``)
+    projectsContainer.html(``)
 
     projectsList.forEach((e, i) => {
         const projectElement = $(
@@ -26,11 +24,7 @@ $(document).ready(function () {
             redirect(`/gallery/${e.id}`);
         })
 
-        if (i < 3) {
-            projectsRowRight.append(projectElement)
-        } else {
-            projectsRowLeft.append(projectElement)
-        }
+        projectsContainer.append(projectElement)
     })
 
     closeGallery()
@@ -55,7 +49,7 @@ $(document).ready(function () {
         $(".gallery__navBtn--left").click(() => {
             let currentId = projectRoute
             let currentPos = idList.findIndex(project => project.includes(currentId))
-            if(currentPos > 0) {
+            if (currentPos > 0) {
                 redirect(`/gallery/${idList[currentPos - 1]}`);
             } else {
                 redirect(`/gallery/${idList[idList.length - 1]}`);
@@ -65,7 +59,7 @@ $(document).ready(function () {
         $(".gallery__navBtn--right").click(() => {
             let currentId = projectRoute
             let currentPos = idList.findIndex(project => project.includes(currentId))
-            if(currentPos < idList.length - 1) {
+            if (currentPos < idList.length - 1) {
                 redirect(`/gallery/${idList[currentPos + 1]}`);
             } else {
                 redirect(`/gallery/${idList[0]}`);

@@ -603,12 +603,14 @@ input[type=button] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-top: 50px;
 }
 
@@ -768,7 +770,9 @@ input[type=button] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
+  margin: 10px 10px;
+  width: 100%;
+  max-width: 250px;
 }
 
 .field__icon {
@@ -783,12 +787,16 @@ input[type=button] {
           justify-content: center;
   background-color: white;
   border-radius: 10px;
-  min-width: 260px;
+  width: 100%;
   height: 220px;
 }
 
+.field__icon img {
+  max-width: none;
+}
+
 .field__title {
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
@@ -866,44 +874,18 @@ input[type=button] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.myWork__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.myWork__row--left {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.myWork__row--left .project {
-  margin-right: 20px;
-}
-
-.myWork__row--right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.myWork__row--right .project {
-  margin-left: 20px;
 }
 
 .project {
@@ -923,6 +905,7 @@ input[type=button] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 5px;
   margin-top: 40px;
 }
 
