@@ -6,7 +6,6 @@ $(document).ready(function () {
     moveToSection(".moveToContactMe", "contactMe")
 
     const projectsContainer = $(".myWork__body")
-
     projectsContainer.html(``)
 
     projectsList.forEach((e, i) => {
