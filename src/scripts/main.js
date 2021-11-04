@@ -34,6 +34,7 @@ $(document).ready(function () {
     })
 
     closeGallery()
+    navBetweenProjects()
 
     function closeGallery() {
         $(".gallery__close").click(() => {
@@ -47,5 +48,28 @@ $(document).ready(function () {
                 scrollTop: $(`#${section}`).offset().top
             }, 500);
         });
+    }
+
+    function navBetweenProjects() {
+        let idList = ["solidar", "liberalasaves", "eltestigo", "mimarca", "fit2", "samsunglandingpage"]
+        $(".gallery__navBtn--left").click(() => {
+            let currentId = projectRoute
+            let currentPos = idList.findIndex(project => project.includes(currentId))
+            if(currentPos > 0) {
+                redirect(`/gallery/${idList[currentPos - 1]}`);
+            } else {
+                redirect(`/gallery/${idList[idList.length - 1]}`);
+            }
+        })
+
+        $(".gallery__navBtn--right").click(() => {
+            let currentId = projectRoute
+            let currentPos = idList.findIndex(project => project.includes(currentId))
+            if(currentPos < idList.length - 1) {
+                redirect(`/gallery/${idList[currentPos + 1]}`);
+            } else {
+                redirect(`/gallery/${idList[0]}`);
+            }
+        })
     }
 })

@@ -1194,7 +1194,7 @@ input[type=button] {
 .gallery__title {
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  color: #62C4F6;
+  color: #8582D9;
 }
 
 .gallery__instructions {
@@ -1287,7 +1287,33 @@ input[type=button] {
 }
 
 .gallery__linkSection span:hover {
-  color: #EF6161;
+  color: #ef6161;
+}
+
+.gallery__navBtn {
+  background-color: rgba(98, 196, 246, 0);
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.gallery__navBtn:hover {
+  background-color: rgba(98, 196, 246, 0.3);
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.gallery__navBtn--left {
+  left: 5px;
+}
+
+.gallery__navBtn--right {
+  right: 5px;
 }
 
 .button {
@@ -1436,17 +1462,5 @@ body {
 
 .notScroll {
   overflow: hidden;
-}
-
-.boldPhrase {
-  font-weight: 700;
-}
-
-.boldPhrase--blue {
-  color: #62C4F6;
-}
-
-.boldPhrase--purple {
-  color: #8582D9;
 }
 /*# sourceMappingURL=main.css.map */

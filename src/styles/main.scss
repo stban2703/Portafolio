@@ -47,15 +47,3 @@ body {
 .notScroll {
     overflow: hidden;
 }
-
-.boldPhrase {
-    font-weight: 700;
-
-    &--blue {
-        color: $mainBlue;
-    }
-
-    &--purple {
-        color: $mainPurple;
-    }
-}

@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    //background-color: rgba($color: #FFFFFF, $alpha: 0.9);
     background-color: #131722;
     width: 100%;
     display: flex;
@@ -36,7 +35,7 @@
     &__title {
         font-family: $rubik-font;
         font-size: $text-fontSize;
-        color: $mainBlue;
+        color: $mainPurple;
     }
 
     &__instructions {
@@ -74,7 +73,6 @@
         flex-direction: column;
         width: 100%;
         padding: 0 5px;
-
     }
 
     &__image {
@@ -108,8 +106,32 @@
             color: white;
 
             &:hover {
-                color: #EF6161;
+                color: #ef6161;
             }
+        }
+    }
+
+    &__navBtn {
+        background-color: rgba($color: $mainBlue, $alpha: 0);
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+        transition: all ease-out 0.2s;
+
+        &:hover {
+            background-color: rgba($color: $mainBlue, $alpha: 0.3);
+            cursor: pointer;
+            transition: all ease-in 0.2s;
+        }
+
+        &--left {
+            left: 5px;
+        }
+
+        &--right {
+            right: 5px;
         }
     }
 }
