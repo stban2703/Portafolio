@@ -811,6 +811,7 @@ input[type=button] {
 }
 
 .myWork {
+  margin-top: 80px;
   background-color: #000000;
   width: 100%;
   display: -webkit-box;

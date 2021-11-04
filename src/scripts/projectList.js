@@ -83,6 +83,29 @@ const solidarPage =
 const liberaPage = 
 `
 <section class="gallery__view">
-    <img src="./public/projects/liberalasaves/libera00.png" alt="">
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera00.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera01.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera02.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera03.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera04.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera05.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera06.png" alt="">
+    </div>
+    <div class="gallery__image">
+        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera07.png" alt="">
+    </div>
 </section>
 `
