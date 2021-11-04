@@ -24,7 +24,7 @@ $(document).ready(function () {
             </section>`)
 
         projectElement.click(function (event) {
-            redirect("/gallery");
+            redirect(`/gallery/${e.id}`);
         })
 
         if (i < 3) {

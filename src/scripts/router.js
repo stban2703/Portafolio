@@ -15,7 +15,7 @@ function checkLocationLink() {
         linkRoute = linkSegments[1]
         projectRoute = ""
 
-        if (linkRoute.includes("projects")) {
+        if (linkRoute.includes("gallery")) {
             let localRoute = linkRoute.split("/")
             linkRoute = "/" + localRoute[1]
 
@@ -29,17 +29,12 @@ function checkLocationLink() {
 function router() {
     checkLocationLink()
     screen = linkRoute
-
-    switch (linkRoute) {
-        case "":
-            redirect("/home")
-            break;
-        case "/home":
-            homeScreen()
-            break;
-        case "/gallery":
-            galleryScreen()
-            break;
+    if (linkRoute == "") {
+        redirect("/home")
+    } else if (linkRoute == "/home") {
+        homeScreen()
+    } else if (linkRoute.includes("/gallery")) {
+        galleryScreen()
     }
 }
 

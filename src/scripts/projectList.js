@@ -36,3 +36,19 @@ const projectsList = [
         title: "Samsung Landing Page"
     }
 ]
+
+
+const solidarPage = 
+`
+<section class="gallery__view">
+    <img src="./public/projects/solidar/solidar00.gif" alt="">
+    <img src="./public/projects/solidar/solidar01.jpg" alt="">
+</section>
+`
+
+const liberaPage = 
+`
+<section class="gallery__view">
+    <img src="./public/projects/liberalasaves/libera00.png" alt="">
+</section>
+`
