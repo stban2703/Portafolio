@@ -33,7 +33,6 @@ $(document).ready(function () {
 
     const aboutMe = $("#aboutMe")
     const softSkills = $(".softSkill")
-
     const softSkillTL = gsap.timeline({
         scrollTrigger: {
             trigger: aboutMe,
@@ -45,7 +44,6 @@ $(document).ready(function () {
 
     const fieldsInterest = $("#fieldsOfInterest")
     const fields = $(".field")
-
     const fieldsTL = gsap.timeline({
         scrollTrigger: {
             trigger: fieldsInterest,
@@ -53,6 +51,17 @@ $(document).ready(function () {
             toggleActions: "play none reverse reset"
         },
         ease: "power3"
+    });
+
+    const ideSection = $("#ideSection")
+    const ides = $(".ide")
+    const ideTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: ideSection,
+            start: "top center",
+            toggleActions: "play none reverse reset"
+        },
+        ease: "in"
     });
 
     softSkillTL.
@@ -65,6 +74,11 @@ $(document).ready(function () {
         to(fields[0], { duration: 0.4, opacity: 1, y: 0, ease: "power3" }).
         to(fields[1], { duration: 0.4, opacity: 1, y: 0, ease: "power3" }).
         to(fields[2], { duration: 0.4, opacity: 1, y: 0, ease: "power3" })
+
+    ideTL.
+        to(ides[0], { duration: 0.4, opacity: 1, rotationX: 0, ease: "in" }).
+        to(ides[1], { duration: 0.4, opacity: 1, rotationX: 0, ease: "in" }).
+        to(ides[2], { duration: 0.4, opacity: 1, rotationX: 0, ease: "in" })
 
     function closeGallery() {
         $(".gallery__close").click(() => {

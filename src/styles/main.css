@@ -1007,6 +1007,9 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 20px;
+  opacity: 0;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
 }
 
 .ide__img {

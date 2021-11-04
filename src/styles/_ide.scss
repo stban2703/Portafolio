@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    opacity: 0;
+    transform: rotateX(-90deg);
 
     &__img {
         max-width: none;
