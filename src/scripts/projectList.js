@@ -42,7 +42,7 @@ const solidarPage =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/solidar/solidar00.gif" alt="">
+        <img src="./public/projects/solidar/solidar00.gif" alt="">
     </div>
     <div class="gallery__image">
         <img src="./public/projects/solidar/solidar01.jpg" alt="">
@@ -84,7 +84,7 @@ const liberaPage =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/liberalasaves/libera00.png" alt="">
+        <img src="./public/projects/liberalasaves/libera00.png" alt="">
     </div>
     <div class="gallery__image">
         <img src="./public/projects/liberalasaves/libera01.png" alt="">
@@ -114,7 +114,7 @@ const elTestigoPage =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/eltestigo/eltestigo00.png" alt="">
+        <img src="./public/projects/eltestigo/eltestigo00.png" alt="">
     </div>
     <div class="gallery__image gallery__image--video">
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/CjurNnfdXGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -170,7 +170,7 @@ const miMarcaPage =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/mimarca/mimarca00.gif" alt="">
+        <img src="./public/projects/mimarca/mimarca00.gif" alt="">
     </div>
     <div class="gallery__image">
         <img src="./public/projects/mimarca/mimarca01.jpg" alt="">
@@ -197,7 +197,7 @@ const fit2Page =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/fit2/fit200.jpg" alt="">
+        <img src="./public/projects/fit2/fit200.jpg" alt="">
     </div>
     <div class="gallery__image">
         <img src="./public/projects/fit2/fit201.jpg" alt="">
@@ -233,7 +233,7 @@ const samsungLandingPage =
 `
 <section class="gallery__view">
     <div class="gallery__image">
-        <img class="animate__animated animate__fadeIn" src="./public/projects/samsunglandingpage/landingsamsung00.jpg" alt="">
+        <img src="./public/projects/samsunglandingpage/landingsamsung00.jpg" alt="">
     </div>
     <div class="gallery__image">
         <img src="./public/projects/samsunglandingpage/landingsamsung01.jpg" alt="">
