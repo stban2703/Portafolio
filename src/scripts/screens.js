@@ -46,5 +46,5 @@ const galleryScreen = () => {
     setTimeout(() => {
         $(".loader").addClass("hidden")
         $(".gallery__view").addClass("animate__animated animate__fadeIn")
-    }, 1200)
+    }, 2000)
 }

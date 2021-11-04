@@ -50,10 +50,13 @@
                 color: $white-text;
                 font-family: $rubik-font;
                 font-size: $header-fontSize;
-            }
+                transition: all ease-out 0.2s;
 
-            &:hover {
-                cursor: pointer;
+                &:hover {
+                    cursor: pointer;
+                    color: $mainBlue;
+                    transition: all ease-in 0.2s;
+                }
             }
         }
     }
