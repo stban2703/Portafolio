@@ -1169,6 +1169,34 @@ input[type=button] {
   height: 600px;
 }
 
+.gallery__image--video {
+  height: 500px;
+}
+
+.gallery__linkSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 10px;
+}
+
+.gallery__linkSection span {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.gallery__linkSection span:hover {
+  color: #EF6161;
+}
+
 .button {
   outline: none;
   border: none;

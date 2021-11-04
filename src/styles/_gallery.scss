@@ -27,5 +27,27 @@
         &--prototype {
             height: 600px;
         }
+
+        &--video {
+            height: 500px;
+        }
+    }
+
+    &__linkSection {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 10px;
+
+        span {
+            font-family: $nunito-font;
+            font-size: $text-fontSize;
+            color: white;
+
+            &:hover {
+                color: #EF6161;
+            }
+        }
     }
 }

@@ -21,5 +21,11 @@ const galleryScreen = () => {
         case "liberalasaves":
             $(".gallery").html(liberaPage)
             break;
+        case "eltestigo":
+            $(".gallery").html(elTestigoPage)
+            break;
+        case "mimarca":
+            $(".gallery").html(miMarcaPage)
+            break;
     }
 }
