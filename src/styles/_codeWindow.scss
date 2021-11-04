@@ -45,3 +45,33 @@
     }
 
 }
+
+@media (max-width: 912px) {
+    .codeWindow {
+        padding-right: 5px;
+
+        &__editor {
+            font-size: $text-fontSize - 0.2;
+        }
+
+        &__container {
+            width: fit-content;
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    .codeWindow {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 398px) {
+    .codeWindow {
+        &__editor {
+            font-size: $text-fontSize - 0.5;
+        }
+    }
+}

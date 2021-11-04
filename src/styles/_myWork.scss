@@ -39,3 +39,13 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 912px) {
+    .myWork {
+        &__title {
+            h3 {
+                font-size: $subtitle-fontSize - 0.2;
+            }
+        }
+    }
+}

@@ -23,3 +23,18 @@
         margin-left: 10px;
     }
 }
+
+@media (max-width: 775px) {
+    .contact {
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__text {
+            font-size: $text-fontSize - 0.3;
+            margin-left: 5px;
+        }
+    }
+}

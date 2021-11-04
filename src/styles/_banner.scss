@@ -78,3 +78,45 @@
         max-width: 400px;
     }
 }
+
+@media (max-width: 912px) {
+    .banner {
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__info {
+            margin-top: 30px;
+        }
+
+        &__image {
+            width: 400px;
+            height: 400px;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .banner {
+        &__image {
+            width: 310px;
+            height: 310px;
+        }
+
+        &__title {
+            font-size: $title-fontSize - 0.3;
+        }
+    
+        &__subtitle {
+            font-size: $subtitle-fontSize - 0.3;
+        }
+    
+        &__text {
+            font-size: $text-fontSize - 0.3;
+        }
+    }
+}

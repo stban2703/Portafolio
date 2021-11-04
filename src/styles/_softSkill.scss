@@ -17,7 +17,7 @@
             width: 100%;
         }
     }
-    
+
     &__title {
         font-family: $nunito-font;
         font-size: $text-fontSize;
@@ -34,6 +34,61 @@
     &--purple {
         .softSkill__icon {
             background-color: rgba($color: $mainPurple, $alpha: 0.1);
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .softSkill {
+        &__icon {
+            width: 150px;
+            height: 158px;
+        }
+
+        &__title {
+            font-size: $text-fontSize - 0.1;
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    .softSkill {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        &__icon {
+            padding: 15px;
+            width: 110px;
+            height: 118px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .softSkill {
+        &__icon {
+            padding: 20px;
+            width: 200px;
+            height: 208px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .softSkill {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        align-items: center;
+
+        &__icon {
+            //padding: 20px;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            
+            img {
+                height: 100%;
+            }
         }
     }
 }
