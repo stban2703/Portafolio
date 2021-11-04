@@ -1134,7 +1134,7 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: black;
   width: 100%;
   display: flex;
   display: flex;
@@ -1151,6 +1151,21 @@ input[type=button] {
           flex-direction: column;
   width: 100%;
   max-width: 1100px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.gallery__image img {
+  display: block;
+}
+
+.gallery__image--prototype {
+  height: 600px;
 }
 
 .button {
