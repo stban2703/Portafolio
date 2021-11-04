@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" defer></script>
     <script src="./src/scripts/projectList.js" defer></script>
     <script src="./src/scripts/screens.js"></script>
     <script src="./src/scripts/router.js" defer></script>
@@ -174,7 +176,7 @@
                 </section>
             </section>
         </article>
-        <article class="aboutMeSection aboutMeSection--light">
+        <article class="aboutMeSection aboutMeSection--light" id="fieldsOfInterest">
             <section class="aboutMeSection__container">
                 <section class="aboutMeSection__segment">
                     <div class="aboutMeSection__title">
@@ -186,19 +188,19 @@
                     <section class="aboutMeSection__fields">
                         <div class="field field--lightBlue">
                             <section class="field__icon">
-                                <img src="./public/img/androidfield.svg" alt="Android apps">
+                                <img class="field__img field__img--lightBlue" src="./public/img/androidfield.svg" alt="Android apps">
                             </section>
                             <h3 class="field__title">Mobile Apps</h3>
                         </div>
                         <div class="field field--purple">
                             <section class="field__icon">
-                                <img src="./public/img/webfield.svg" alt="Web development">
+                                <img class="field__img field__img--purple" src="./public/img/webfield.svg" alt="Web development">
                             </section>
                             <h3 class="field__title">Web development</h3>
                         </div>
                         <div class="field field--darkBlue">
                             <section class="field__icon">
-                                <img src="./public/img/prototypefield.svg" alt="Prototype design">
+                                <img class="field__img field__img--darkBlue" src="./public/img/prototypefield.svg" alt="Prototype design">
                             </section>
                             <h3 class="field__title">Prototype design</h3>
                         </div>
@@ -290,9 +292,12 @@
                         <img src="./public/img/biglogo.svg" alt="Logo">
                     </div>
                     <section class="footer__networks">
-                        <a href="https://github.com/stban2703" target="_blank" class="footer__item"><img src="./public/img/github.svg" alt="Github"></a>
-                        <a href="https://www.behance.net/stban140129d5" target="_blank" class="footer__item"><img src="./public/img/behance.svg" alt="Behance"></a>
-                        <a href="https://www.linkedin.com/in/esteban-volveras-95b8861b5/" target="_blank" class="footer__item"><img src="./public/img/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://github.com/stban2703" target="_blank" class="footer__item"><img
+                                src="./public/img/github.svg" alt="Github"></a>
+                        <a href="https://www.behance.net/stban140129d5" target="_blank" class="footer__item"><img
+                                src="./public/img/behance.svg" alt="Behance"></a>
+                        <a href="https://www.linkedin.com/in/esteban-volveras-95b8861b5/" target="_blank"
+                            class="footer__item"><img src="./public/img/linkedin.svg" alt="LinkedIn"></a>
                     </section>
                 </section>
             </section>

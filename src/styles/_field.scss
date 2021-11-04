@@ -5,6 +5,8 @@
     margin: 10px 10px;
     width: 100%;
     max-width: 250px;
+    opacity: 0;
+    transform: translate(0, 200px);
 
     &__icon {
         display: flex;

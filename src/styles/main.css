@@ -583,6 +583,7 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 80px;
+  background-color: #ebedf3;
 }
 
 .aboutMeSection__container {
@@ -792,6 +793,7 @@ input[type=button] {
 }
 
 .softSkill {
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,6 +803,8 @@ input[type=button] {
           flex-direction: column;
   margin-left: 20px;
   margin-bottom: 20px;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
 }
 
 .softSkill__icon {
@@ -1029,6 +1033,9 @@ input[type=button] {
   margin: 10px 10px;
   width: 100%;
   max-width: 250px;
+  opacity: 0;
+  -webkit-transform: translate(0, 200px);
+          transform: translate(0, 200px);
 }
 
 .field__icon {
@@ -1741,6 +1748,7 @@ body {
 }
 
 .mainPage {
+  background-color: #ebedf3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -29,6 +29,43 @@ $(document).ready(function () {
     closeGallery()
     navBetweenProjects()
 
+    gsap.registerPlugin(ScrollTrigger);
+
+    const aboutMe = $("#aboutMe")
+    const softSkills = $(".softSkill")
+
+    const softSkillTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: aboutMe,
+            start: "top center",
+            toggleActions: "play none reverse reset"
+        },
+        ease: "in"
+    });
+
+    const fieldsInterest = $("#fieldsOfInterest")
+    const fields = $(".field")
+
+    const fieldsTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: fieldsInterest,
+            start: "top center",
+            toggleActions: "play none reverse reset"
+        },
+        ease: "power3"
+    });
+
+    softSkillTL.
+        to(softSkills[0], { duration: 0.4, opacity: 1, rotationY: 0 }).
+        to(softSkills[1], { duration: 0.4, opacity: 1, rotationY: 0 }).
+        to(softSkills[2], { duration: 0.4, opacity: 1, rotationY: 0 }).
+        to(softSkills[3], { duration: 0.4, opacity: 1, rotationY: 0 })
+
+    fieldsTL.
+        to(fields[0], { duration: 0.4, opacity: 1, y: 0, ease: "power3" }).
+        to(fields[1], { duration: 0.4, opacity: 1, y: 0, ease: "power3" }).
+        to(fields[2], { duration: 0.4, opacity: 1, y: 0, ease: "power3" })
+
     function closeGallery() {
         $(".gallery__close").click(() => {
             redirect("/home")

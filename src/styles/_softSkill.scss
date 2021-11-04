@@ -1,8 +1,10 @@
 .softSkill {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-bottom: 20px;
+    transform: rotateY(90deg);
 
     &__icon {
         width: 200px;
