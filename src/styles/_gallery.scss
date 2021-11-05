@@ -119,6 +119,7 @@
         top: 0;
         z-index: 1;
         transition: all ease-out 0.2s;
+        animation: pulseGalleryBtns 1.2s 3;
 
         &:hover {
             background-color: rgba($color: $mainBlue, $alpha: 0.3);
@@ -133,5 +134,19 @@
         &--right {
             right: 5px;
         }
+    }
+}
+
+@keyframes pulseGalleryBtns {
+    0% {
+        background-color: rgba($color: $mainBlue, $alpha: 0);
+    }
+
+    50% {
+        background-color: rgba($color: $mainBlue, $alpha: 0.3);;
+    }
+
+    100% {
+        background-color: rgba($color: $mainBlue, $alpha: 0);;
     }
 }

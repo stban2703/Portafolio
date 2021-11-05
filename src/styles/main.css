@@ -1610,6 +1610,8 @@ input[type=button] {
   z-index: 1;
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
+  -webkit-animation: pulseGalleryBtns 1.2s 3;
+          animation: pulseGalleryBtns 1.2s 3;
 }
 
 .gallery__navBtn:hover {
@@ -1625,6 +1627,30 @@ input[type=button] {
 
 .gallery__navBtn--right {
   right: 5px;
+}
+
+@-webkit-keyframes pulseGalleryBtns {
+  0% {
+    background-color: rgba(98, 196, 246, 0);
+  }
+  50% {
+    background-color: rgba(98, 196, 246, 0.3);
+  }
+  100% {
+    background-color: rgba(98, 196, 246, 0);
+  }
+}
+
+@keyframes pulseGalleryBtns {
+  0% {
+    background-color: rgba(98, 196, 246, 0);
+  }
+  50% {
+    background-color: rgba(98, 196, 246, 0.3);
+  }
+  100% {
+    background-color: rgba(98, 196, 246, 0);
+  }
 }
 
 .button {
