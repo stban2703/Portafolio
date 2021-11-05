@@ -104,6 +104,11 @@ const liberaPage =
     <div class="gallery__image">
         <img src="./public/projects/liberalasaves/libera07.png" alt="">
     </div>
+    <div class="gallery__linkSection gallery__linkSection--aves">
+        <a href="https://stban2703.github.io/HCI-Contaduria-Publica/" target="_blank" rel="nofollow">
+            <span>https://stban2703.github.io/HCI-Contaduria-Publica/</span>
+        </a>
+    </div>
 `
 
 const elTestigoPage = 
@@ -150,7 +155,7 @@ const elTestigoPage =
     <div class="gallery__image">
         <img src="./public/projects/eltestigo/eltestigo12.png" alt="">
     </div>
-    <div class="gallery__linkSection">
+    <div class="gallery__linkSection gallery__linkSection--testigo">
         <a href="https://stban1401.wixsite.com/eltestigo" target="_blank" rel="nofollow">
             <span>https://stban1401.wixsite.com/eltestigo</span>
         </a>

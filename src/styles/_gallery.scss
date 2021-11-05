@@ -98,15 +98,33 @@
         align-items: center;
         justify-content: center;
         padding: 50px 10px;
-        background-color: black;
 
         span {
             font-family: $nunito-font;
             font-size: $text-fontSize;
-            color: white;
+        }
 
-            &:hover {
-                color: #ef6161;
+        &--aves {
+            background-color: #B1E1E2;
+
+            span {
+                color: white;
+
+                &:hover {
+                    color: #EBB33A;
+                }
+            }
+        }
+
+        &--testigo {
+            background-color: black;
+
+            span {
+                color: white;
+
+                &:hover {
+                    color: #ef6161;
+                }
             }
         }
     }

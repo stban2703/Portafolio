@@ -1588,16 +1588,34 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 10px;
-  background-color: black;
 }
 
 .gallery__linkSection span {
   font-family: "Nunito", sans-serif;
   font-size: 1.25rem;
+}
+
+.gallery__linkSection--aves {
+  background-color: #B1E1E2;
+}
+
+.gallery__linkSection--aves span {
   color: white;
 }
 
-.gallery__linkSection span:hover {
+.gallery__linkSection--aves span:hover {
+  color: #EBB33A;
+}
+
+.gallery__linkSection--testigo {
+  background-color: black;
+}
+
+.gallery__linkSection--testigo span {
+  color: white;
+}
+
+.gallery__linkSection--testigo span:hover {
   color: #ef6161;
 }
 
