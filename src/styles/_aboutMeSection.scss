@@ -184,3 +184,13 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .aboutMeSection {
+        &__title {
+            p {
+                font-size: $subtitle-fontSize - 0.5;
+            }
+        }
+    }
+}

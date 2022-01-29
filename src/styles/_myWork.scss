@@ -49,3 +49,17 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .myWork {
+        &__body {
+            margin-top: 20px;
+        }
+
+        &__title {
+            h3 {
+                font-size: $subtitle-fontSize - 0.5;
+            }
+        }
+    }
+}

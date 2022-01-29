@@ -120,3 +120,29 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .banner {
+
+        &__container {
+            padding-bottom: 35px;
+        }
+
+        &__image {
+            width: 290px;
+            height: 290px;
+        }
+
+        &__title {
+            font-size: $title-fontSize - 1;
+        }
+    
+        &__subtitle {
+            font-size: $subtitle-fontSize - 1;
+        }
+    
+        &__text {
+            font-size: $text-fontSize - 0.3;
+        }
+    }
+}

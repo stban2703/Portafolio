@@ -37,7 +37,7 @@ $(document).ready(function () {
         scrollTrigger: {
             trigger: aboutMe,
             start: "top center",
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         ease: "in"
     });
@@ -48,7 +48,7 @@ $(document).ready(function () {
         scrollTrigger: {
             trigger: fieldsInterest,
             start: "top center",
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         ease: "power3"
     });
@@ -59,7 +59,7 @@ $(document).ready(function () {
         scrollTrigger: {
             trigger: ideSection,
             start: "top center",
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         ease: "in"
     });
