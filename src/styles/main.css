@@ -1714,6 +1714,19 @@ input[type=button] {
   color: #ef6161;
 }
 
+.gallery__linkSection--samsung {
+  background-color: black;
+  padding: 5px 10px;
+}
+
+.gallery__linkSection--samsung span {
+  color: #1089FF;
+}
+
+.gallery__linkSection--samsung span:hover {
+  color: white;
+}
+
 .gallery__navBtn {
   background-color: rgba(98, 196, 246, 0);
   position: absolute;

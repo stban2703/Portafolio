@@ -247,4 +247,12 @@ const samsungLandingPage =
     <div class="gallery__image">
         <img src="./public/projects/samsunglandingpage/landingsamsung06.jpg" alt="">
     </div>
+    <div class="gallery__linkSection gallery__linkSection--samsung">
+        <a href="https://stban2703.github.io/Galaxy-S20-Ultra-Landing-Page/" target="_blank" rel="nofollow">
+            <span>https://stban2703.github.io/Galaxy-S20-Ultra-Landing-Page/</span>
+        </a>
+    </div>
+    <div class="gallery__image">
+        <img src="./public/projects/samsunglandingpage/landingsamsung07.jpg" alt="">
+    </div>
 `

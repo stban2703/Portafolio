@@ -127,6 +127,19 @@
                 }
             }
         }
+
+        &--samsung {
+            background-color: black;
+            padding: 5px 10px;
+
+            span {
+                color: #1089FF;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
 
     &__navBtn {
