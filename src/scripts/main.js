@@ -9,6 +9,7 @@ $(document).ready(function () {
     projectsContainer.html(``)
 
     projectsList.forEach((e, i) => {
+        console.log(e)
         const projectElement = $(
             `<section class="project" id="${e.id}">
                 <section class="project__preview" style="background-image: url('./public/img/${e.previewUrl}');">
